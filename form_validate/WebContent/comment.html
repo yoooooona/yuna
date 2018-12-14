@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>comment</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+</head>
+<body>
+<form class="cmxform" id="commentForm" method="get" action="">
+		<fieldset>
+			<legend>Please provide your name, email address (won't be published) and a comment</legend>
+			<p>
+				<label for="cname">Name (required, at least 2 characters)</label>
+				<input id="cname" name="name" minlength="2" type="text" required> <!-- 이름최소 2글자 -->
+			</p>
+			<p>
+				<label for="cemail">E-Mail (required)</label>
+				<input id="cemail" type="email" name="email" required>
+			</p>
+			<p>
+				<label for="curl">URL (optional)</label>
+				<input id="curl" type="url" name="url">
+			</p>
+			<p>
+				<label for="ccomment">Your comment (required)</label>
+				<textarea id="ccomment" name="comment" required></textarea>
+			</p>
+			<p>
+				<input class="submit" type="submit" value="Submit">
+			</p>
+		</fieldset>
+	</form>
+	<script>
+		$(function(){
+			$("#commentForm").validate();
+		});
+	</script>  <!-- form 검증 -->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		전화번호 : <input type="text" name="tel" onchange="checkNumeric(this)">
+	</form>
+	<script>
+		function checkNumeric(tel){
+			if(!Number(tel.value)){
+				alert("전화번호를 확인해 주세요");
+				tel.focus();
+				return;
+			}	
+		}
+	</script>
+</body>
+</html>

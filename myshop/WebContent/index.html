@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>시작 페이지</title>
+<link type="text/css" rel="stylesheet" href="css/mystyle.css">
+<script>
+function winopen(){
+	window.open('view/register.html','','width=430, height=300');
+}
+</script>
+</head>
+<body>
+	<header>
+		<!-- 헤더영역 -->
+		<img src="img/logo.png"><a href="index.html"> <!-- logo.png 삽입시키고  링크걸기(index.html) 초코우유 꿀맛-->
+		</a>
+	</header>
+	<nav>
+		<!-- 메뉴 HOME ABOUT US NEWS MY ACCOUNT CONTACTS -->
+		<ul>
+			<li><a href="index.html">HOME</li>
+			<li><a href="">ABOUT US</li>
+			<li><a href="">NEWS</li>
+			<li><a href="">MY ACCOUNT</li>
+			<li><a href="">CONTACTS</li>
+		</ul>
+	</nav>
+	<aside id="left">
+		<!-- 카테고리 -->
+		<ul>
+			<li><a href="view/computer.html" target="iframe1">컴퓨터</a></li>
+			<li><a href="view/fassion.html" target="iframe1">의류</a></li>
+			<li><a href="view/music.html" target="iframe1">음악</a></li>
+			<li><a href="view/movie.html" target="iframe1">영화</a></li>
+			<li><a href="" target="">스포츠/레저</a></li>
+			<li><a href="" target="">가구/인테리어</a></li>
+			<li><a href="" target="">식품</a></li>
+		</ul>
+	</aside>
+	<section id="main">
+		<article id="article1">
+			<iframe name="iframe1" src="view/computer.html" id="iframe1">
+			</iframe>
+		</article>
+	</section>
+	<aside id="right">	<!-- 화면 오른쪽 쇼핑카트와 로그인 정보 -->	
+		<div id="shopcart">
+			<h4>Shopping Cart</h4>
+			현재 쇼핑카트에 물품이 없습니다.<br> <a href="view/cart.html">쇼핑카트 보기</a>
+		</div>
+		<div id="Login">
+			<h4>Login</h4>
+			<form action="">
+				<table>
+					<tr>
+						<td>아 이 디</td>
+						<td><input type="text" size="20"></td>
+					</tr>
+					<tr>
+						<td>패스워드</td>
+						<td><input type="password" size="20"></td>
+					<tr>
+						<td colspan="2"><input type="button" value="로그인"> <input
+							type="reset" value="초기화"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="javascript:void(0);" id="register"
+							onclick="winopen();">회원가입</a>
+						 <a href="#" id="forgot">비밀번호 분실</a>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</aside>
+	<footer id="footer"><!--  각주에 해당하는 컨텐츠 -->
+		<footer id="footer">
+			회사소개 | 이용약관 | 전자금융거래약관 | 개인정보처리방침 | 입점문의 |
+		</footer>
+
+	</footer>
+</body>
+</html>

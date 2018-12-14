@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>클릭하면 사라집니다</h3>
+	<p class="para1">이것은 문단입니다.</p>
+	<p id="para2">이것은 문단입니다.</p>
+	<script src="jquery-3.3.1.js"></script>
+	<script>
+		$(document).ready(function(){ //document가 준비가 되면
+			$("h3").click(function(){ // 클릭하면 글자 사라지기
+				$(this).hide('slow');  //숫자를 넣게 되면 글자 사라지는게 숫가가 높을 수록 느려진다.
+			});
+			$(".para1").click(function(){ //클릭하면 글자 색상 변경하기
+				//document.getElementById('para1').style.color='red';
+				$(this).css("color","#669900");
+			});			
+			$("#para2").click(function(){ //클릭하면 글씨 굵게 변경하기
+				//document.getElementById('para1').style.fontweight='bold';
+			$(this).css("font-weight","bold");
+			});
+			//$("input[type='text']")
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		이름  : <input type="text" name="name"><br>
+		나이 : <input type="number" name="age"><br>
+		<input type="button" value="전송" onclick="form_validate(this.form)">
+	</form>
+	<script>
+		function form_validate(form){
+			//이름이 비어 있는지 검증
+			var name=form.name.value;
+			if(name===""){
+				alert('이름을 입력하세요');
+				form.name.focus();
+				return;
+			}
+			//나이가 비어 있는지 검증
+			var age=form.age.value;
+			if(age===""){
+				alert('나이를 입력하세요');
+				form.age.focus();
+				return;
+			}
+		}</script>
+</body>
+</html>

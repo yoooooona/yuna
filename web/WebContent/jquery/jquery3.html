@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>버튼을 클릭하면 사라집니다</h3>
+	<h3>버튼을 클릭하면 사라집니다</h3>
+	<h3>버튼을 클릭하면 사라집니다</h3>
+	<h3>버튼을 클릭하면 사라집니다</h3>
+	<h3>버튼을 클릭하면 사라집니다</h3>
+	<h3>버튼을 클릭하면 사라집니다</h3>
+	<h3>버튼을 클릭하면 사라집니다</h3>
+	<input type="button" value="변경" id="btn1">
+	<script src="jquery-3.3.1.js"></script>
+	<script>
+		$(document).ready(function(){ //document가 준비가 되면
+			$("#btn1").click(function(){ // 클릭하면 글자 사라지기
+				$("h3").hide();    //*를 넣으면 전체 없어짐
+			});
+			//$("input[type='text']")
+		});
+	</script>
+</body>
+</html>

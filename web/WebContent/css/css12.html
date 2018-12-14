@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css11</title>
+<style>
+table {
+	border-collapse: collapse; /*셀과 셀 사이를 합치는 작업*/
+	width: 30%;
+}
+
+table, th, td {
+	border: 1px solid black; /*table만 그리게 되면 바깥 테두리만 그려지기 때문에 th, td까지 해줌*/
+}
+	th,td{
+		padding:15px;
+		text-align: left;
+		}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>Griffin</td>
+		</tr>
+		<tr>
+			<td>Lois</td>
+			<td>Griffin</td>
+		</tr>
+	</table>
+</body>
+</html>

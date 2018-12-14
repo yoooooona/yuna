@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<a href="http://www.naver.com" id="site">네이버</a>
+	<button type="button" onclick="change">구글로 변경</button>
+	<script>
+		function change(){
+			var site=document.getElementById('site');
+			
+			site.innerHTML="구글";
+			site.href="http://www.google.com";
+		}
+	</script>
+</body>
+</html>

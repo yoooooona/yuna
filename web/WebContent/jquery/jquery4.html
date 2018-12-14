@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>마우스를 여기로 움직이세요</h3>
+	<script src="jquery-3.3.1.js"></script>
+	<script>
+		$(function(){
+			$("h3").mouseover(function(){
+				$(this).css("color","#FF0000")
+			});
+			//마우스가 나가면 검정색으로 바꿔줌
+			$("h3").mouseout(function() {
+				$(this).css("color","#000000")
+			});
+		});
+	</script>
+</body>
+</html>

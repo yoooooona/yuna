@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<ul>
+		<li>List Item1</li>
+		<li>List Item2</li>
+		<li>List Item3</li>
+		<li>List Item4</li>
+		<li>List Item5</li>
+		<li>List Item6</li>
+	</ul>
+	<script>
+		var list=document.getElementsByTagName('ul')[0]
+		vr itemList=document.getElementsByTagName('li');
+		for(var i=0;i<itemList.length;i++)
+			alert(itemList[i].firstChild.data);
+	</script>
+</body>
+</html>

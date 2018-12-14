@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	이름 : <input type="text"><br>
+	이메일 : <input type="email">
+	<script src="jquery-3.3.1.js"></script>
+	<script>
+		$(function(){
+			/* //input이 focus를 가지면 배경색 변경
+			$("input").focus(function(){
+				$(this).css("background-color","#cccccc");
+			});
+			//input이 focus를 잃으면 배경색 변경
+			$("input").blur(function(){
+				$(this).css("background-color","#ffffff");
+			}); */
+			$("input").on({
+				focus : function(){
+					$(this).css("background-color","#cccccc");	
+				},
+				blur : function(){
+					$(this).css("background-color","#ffffff");
+				}
+			})
+		})
+		</script>
+</body>
+</html>

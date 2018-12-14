@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>덧셈 계산기</h3>
+	<form name="myform">
+		<input type="text" id="num1" size="10">
+		<select>
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+		</select>
+		<input type="text" id="num2" size="10">
+		=<input type="text" id="sum" size="10"><br>
+		<button type="button" onclick="calc()">클릭</button>
+	</form>
+	<script> //input은 기본적으로 text 형태이기 때문에 parseint를 해줌
+		function calc(){
+			//num1에 있는 값과 num2에 있는 값을 더하기 한 후
+			//결과를 alert창에 보여주기
+			var num1 = parseInt(document.getElementById('num1').value);
+			var num2 = parseInt(document.getElementById('num2').value);	
+			document.getElementById('sum').value=num1+num2;
+			//alert(num1+num2);
+		}
+	</script>
+</body>
+</html>

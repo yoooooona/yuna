@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>스크립트로 새창 띄우기</h3>
+	<input type="button" value="구글 창 열기" onclick="winopen()">
+	<script>
+		//window.open(URL, name, specs, replace)
+		//name : _blank, _self, _top....(옵션)
+		//specs : fullscreen 모드, menubar 여부, scrollbars여부...(옵션)
+		//replace : true(history 에 현재 창을 넣게 됨), false (옵션)
+		function winopen(){
+			window.open('http://www.google.com','_blank','width=300,height=300',true);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		전화번호 : <input type="text" name="tel">
+		<input type="button" value="전송" onclick="checkNumeric(this.form)">
+	</form>
+	<script>
+		function checkNumeric(form){
+			var exp=/^\d{2,3}-\d{3,4}-\d{4}$/;
+			var tel=form.tel.value; //사용자가 입력한 전화번호
+			
+			if(!tel.match(exp)){
+				alert('전화번호를 확인해 주세요');
+				tel.focus();
+				return;
+			}
+		}
+	</script>
+</body>
+</html>

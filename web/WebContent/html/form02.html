@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼(form02)</title>
+</head>
+<body>
+	<!--  post= default값 무엇을 선택했는지 링크창에 안보이게 하기 -->
+	<form action="form01.html" method="post">
+	<!--  name=""없으면 중복체크 가능 -->
+	<!--  value 를 쓰게 되면 내가 무엇을 선택했는지 알수 있음  -->
+	<input type="radio" name="gender" value="남자" checked>Male<br>
+	<input type="radio" name="gender" value="여자">Female<br>
+	<input type="radio" name="gender" value="기타">other<br>
+	<hr>
+	<!-- name="" 이 있어도 중복체크 가능  -->
+	<input type="checkbox" name="fruit" value="사과" checked>사과<br>
+	<input type="checkbox" name="fruit" value="수박">수박<br>
+	<input type="checkbox" name="fruit" value="귤">귤<br>
+	<hr>
+	<input type="hidden" name="page" value="3">
+	<input type="submit"> 
+	</form>
+</body>
+</html>

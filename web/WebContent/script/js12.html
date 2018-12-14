@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이벤트</title>
+</head>
+<body>
+	<!-- <h1 onclick="this.innerHTML ='Ooops!'">이 텍스트를 클릭하세요</h1> -->
+	<h1 onclick="changeText(this)">이 텍스트를 클릭하세요</h1>
+	<script>
+		function changeText(id){
+			id.innerHTML="Ooops!";
+		}
+	</script>
+</body>
+</html>

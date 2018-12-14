@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ 	이름  : <input type ="text" id="test">
+ 	<input type="button" id="btn1" value="클릭">
+ 	<hr>
+ 	<a href="http://www.google.com">구글</a>
+ 	<input type="button" id="btn2" value="클릭">
+ 	<script src="jquery-3.3.1.js"></script>
+ 	<script>
+ 		$(function(){
+ 			$("#btn1").click(function(){ //value 대체
+ 				alert($("#test").val());
+ 			});
+ 			$("#btn2").click(function(){ //href가 가지고 있는 값 가져오기
+ 				$("a").text("네이버");
+ 				$("a").attr("href","http://www.naver.com");
+ 			});
+ 		});</script>
+</body>
+</html>

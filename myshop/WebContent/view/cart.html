@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>쇼핑카트</title>
+<style>
+body{
+	height:100%;
+	background-color: #F3F1E9;
+}
+table caption{
+	color: red;
+	text-decoration: center;
+}
+table{
+	width: 100%;
+	border-collapse:collapse;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<form>
+	<table border="1">
+	<caption>Shopping Cart</caption>
+
+		<tr>
+			<th>품목</th>
+			<th>가격</th>
+			<th>수량</th>
+			<th>합계</th>
+		</tr>
+		<tr>
+			<td>올인원 PC</td>
+			<td>2,000,000</td>
+			<td><input type="number" min="0" step="1" value="0"></td>
+			<td><input type="text" size"6" value="0"></td>
+		</tr>
+		<tr>
+			<td>티셔츠</td>
+			<td>50,000</td>
+			<td><input type="number" min="0" step="1" value="0"></td>
+			<td><input type="text" size"6" value="0"></td>
+		</tr>
+		<tr>
+			<td>음악파일</td>
+			<td>1,000</td>
+			<td><input type="number" min="0" step="1" value="0"></td>
+			<td><input type="text" size"6" value="0"></td>
+		</tr>
+		<tr>
+			<td>영화파일</td>
+			<td>9,000</td>
+			<td><input type="number" min="0" step="1" value="0"></td>
+			<td><input type="text" size"6" value="0"></td>
+		</tr>
+	</table>
+		<input type="button" value="계산"> 
+		<input type="button" value="구매"> 
+		<input type="reset" value="초기화">
+</form>
+	<p>
+		<a href="../index.html">메인으로</a>
+	</p>
+</body>
+</html>

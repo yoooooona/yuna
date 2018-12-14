@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>layout04</title>
+<style>
+ #one{
+ 	background-color: cyan;
+ 	width: 200px;
+ 	height: 50px;
+ 	}
+ 	#two{
+ 		/* position: static; 요소들의 특성(block,inline)에 맞춰 자리를 잡는 방식*/
+ 		position: absolute; /*절대위치설정 : 전체 페이지를 기준으로 설정*/
+ 		left:30px;	/*따라서 top,bottom,left,right 값이 하나라도 들어가야 함*/
+ 		background-color: yellow;
+ 		width:200px;
+ 		height:50px;
+ 		}
+ 	#three{
+ 		background-color: lightgreen;
+ 		width:200px;
+ 		height: 50px;
+ 		}	
+</style>
+</head>
+<body>
+	<p id="one">block #1</p>
+	<div id="two">
+	block #2<br>
+	position:static;<br>
+	</div>
+	<p id="three">block #3</p>
+</body>
+</html>

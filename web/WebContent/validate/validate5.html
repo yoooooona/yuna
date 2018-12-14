@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		이름  : <input type="text" name="name">
+		<input type="button" value="전송" onclick="check(this.form)">
+	</form>
+	<script>
+		function check(form){
+			var exp=/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+			var name=form.name.value; //사용자가 입력한 전화번호
+			
+			if(!name.match(exp)){
+				alert('이름을 확인해 주세요');
+				name.focus();
+				return;
+			}
+		}
+	</script>
+</body>
+</html>

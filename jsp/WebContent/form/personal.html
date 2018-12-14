@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>개인정보</h3>
+	<form action="personal.jsp" method="post">
+		이름    <input type="text" name="name" required="required"><br>
+		아이디 <input type="text" name="id" name=id required="required"><br>
+		이메일 <input type="email" name="email" name=email required="required"><br>
+		직업  <select name="job" multiple size="1">
+			<option value="학생">학생</option>
+			<option value="군인">군인</option>
+			<option value="공무원">공무원</option>
+			<option value="기타">기타</option>			
+		</select> 
+		<p>취미
+			<input type="checkbox" name="hobby" value="독서">독서
+			<input type="checkbox" name="hobby" value="영화감상">영화감상
+			<input type="checkbox" name="hobby" value="게임">게임
+			<input type="checkbox" name="hobby" value="스포츠">스포츠
+			<input type="checkbox" name="hobby" value="잠자기">잠자기
+			<input type="checkbox" name="hobby" value="음악감상">음악감상<br>
+			<input type="submit" value="보내기"> </p>
+	</form>	
+	
+</body>
+</html>
